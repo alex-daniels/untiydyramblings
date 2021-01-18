@@ -1,0 +1,19 @@
+<nav class="main-nav">
+    {{ $current := . }}
+    <ul class="menu-wrapper">
+    {{ range .Site.Menus.nav }}
+      <li class="menu-item">
+        {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $active = or $active (eq .Name $current.Title) }}
+        {{ $active = or $active (and (eq .Name "Words") (eq $current.Section "words")) }}
+        {{ $active = or $active (and (eq .Name "Photos") (eq $current.Section "photos")) }}
+        {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+        {{ $active = or $active (eq .Name "About") }}
+        {{ $active = or $active (eq .Name "Fun Things") }}
+        <a href="{{ .URL }}" {{ if $active }}aria-current="page" class="active" {{ end }}>
+          <span class="text">{{ .Name }}</span>
+        </a>
+      </li>
+    {{ end }}
+    </ul>
+</nav>

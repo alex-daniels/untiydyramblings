@@ -1,0 +1,18 @@
+<!-- Basic stuff -->
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>{{ if .Title }}{{ .Title }}  - {{ end }}{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.Description }}">
+
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
+<link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
+
+<link rel="stylesheet" href="{{ "css/style.css" | absURL }}" />

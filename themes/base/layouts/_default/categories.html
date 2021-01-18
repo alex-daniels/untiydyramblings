@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <div class="categories">
+        <h2>Categories</h2>
+        <ul class="categories-list">
+            {{ range .Data.Categories.Alphabetical }}
+                <li class="categories-single">
+                    <h3>
+                        <a href="{{ .Page.RelPermalink }}">
+                            {{ printf "(%d) %s" .Count .Page.Title }}
+                        </a>
+                    </h3>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}

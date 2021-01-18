@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <article class="taxonomy-list">
+        <h2>{{ .Title }}</h2>
+        <ul></ul>
+            {{ range .Pages }}
+                <li>
+                    <div class="{{ .Type }}-taxonomy-list">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+    </article>
+{{ end }}

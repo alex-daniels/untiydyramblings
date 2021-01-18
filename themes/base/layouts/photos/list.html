@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <article class="photos-list">
+        {{ .Content }}
+        <ul></ul>
+            {{ range .Pages }}
+                <li>
+                    <div class="{{ .Type }}-teaser">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+    </article>
+{{ end }}

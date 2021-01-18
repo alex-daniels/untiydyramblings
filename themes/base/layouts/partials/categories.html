@@ -1,0 +1,8 @@
+{{ with .Params.categories }}
+Filed Under:
+<ul id="topics">
+    {{ range . }}
+        <li><a href="{{ "categories/" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+</ul>
+{{ end }}

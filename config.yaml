@@ -1,0 +1,20 @@
+baseURL: "https://untidyramblings.com"
+languageCode: en-us"
+title: untidyramblings
+theme: 'base'
+enableRobotsTxt: true
+
+menu:
+  nav:
+  - name: Words
+    url: /words/
+    weight: 1
+  - name: Photos
+    url: /photos/
+    weight: 2
+  - name: Fun Things
+    url: /fun-things/
+    weight: 3
+  - name: About
+    url: /about/
+    weight: 4

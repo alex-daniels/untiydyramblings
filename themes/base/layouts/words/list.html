@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <article class="post-list">
+        {{ .Content }}
+        <ul></ul>
+            {{ range .Pages }}
+                <li>
+                    <div class="{{ .Type }}-teaser">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        <div>
+                            {{ .Summary }}
+                        </div>
+                        <a href="{{ .Permalink }}">More</a>
+                    </div>
+                </li>
+            {{ end }}
+        </ul>
+        {{- partial "sidebarList.html" . -}}
+    </article>
+{{ end }}
