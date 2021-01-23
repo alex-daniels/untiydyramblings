@@ -1,37 +1,37 @@
 {{ define "main" }}
     <article class="homepage-content">
         {{ .Content }}
+        <div class="recent-posts">
         <h2>Recent Posts</h2>
         {{ $words := where .Site.RegularPages "Type" "in" "words" }}
-        <div class="recent-posts">
             {{ if gt (len $words) 0 }}
-                <ul>
+                <ul class="words-teasers">
                 {{ range first 3 (.Paginate $words).Pages }}
-                    <li><a href="{{ .Permalink }}">{{- partial "wordsTeaser.html" . -}}</a></li>
+                    <li class="words-teaser"><a href="{{ .Permalink }}">{{- partial "wordsTeaser.html" . -}}</a></li>
                 {{ end }}
                 </ul>
-                <div class="recent-posts__view-more">
+                <div class="recent-posts-view-more">
                     <a href="/words">View more posts</a>
                 </div>
             {{ else }}
                 <h3>No recent posts</h3>
             {{ end }}
         </div>
-        <h2>Recent Photos</h2>
-        {{ $photos := where .Site.RegularPages "Type" "in" "photos" }}
-        <div class="recent-photos">
-            {{ if gt (len $photos) 0}}
-                <ul>
-                {{ range first 3 $photos }}
-                    <li><a href="{{ .Permalink }}">{{- partial "photosTeaser.html" . -}}</a></li>
+<!--         <div class="recent-photos">
+            <h2>Recent Photos</h2>
+            {{ $photos := where .Site.RegularPages "Type" "in" "photos" }}
+                {{ if gt (len $photos) 0}}
+                    <ul class="photo-teasers">
+                    {{ range first 3 $photos }}
+                        <li class="photo-teaser"><a href="{{ .Permalink }}">{{- partial "photosTeaser.html" . -}}</a></li>
+                    {{ end }}
+                    </ul>
+                    <div class="recent-photos-view-more">
+                        <a href="/photos">View more posts</a>
+                    </div>
+                {{ else }}
+                    <h3>No recent photos</h3>
                 {{ end }}
-                </ul>
-                <div class="recent-photos__view-more">
-                    <a href="/photos">View more posts</a>
-                </div>
-            {{ else }}
-                <h3>No recent photos</h3>
-            {{ end }}
-        </div>
+        </div> -->
     </article>
 {{ end }}

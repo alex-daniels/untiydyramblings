@@ -1,7 +1,9 @@
-<div class="words-teaser">
-    <h2>{{ .Title }}</h2>
-    &mdash;<time datetime="{{ .Date }}">{{ .Date.Format "Monday January 2, 2006" }}</time>
-    <div class="words-teaser__summary">
+<div class="words-teaser-content">
+    <h3>{{ .Title }}</h3>
+    <time datetime="{{ .Date }}">&mdash;&nbsp;{{ .Date.Format "Monday January 2, 2006" }}</time>
+    {{ if gt (len .Summary) 0 }}
+    <div class="words-teaser-content-summary">
         {{ .Summary }}
     </div>
+    {{ end }}
 </div>    

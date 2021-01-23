@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+    background: rgba(105, 105, 105, 0.2); 
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    padding-top: 3.5em;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 95vh;
+}
+
+  /*
+  **main colors**
+  
+  Maximum Yellow: F0F600
+  Dim Gray: 696969
+  White: FFFFFF
+  Black: 000000
+  Ruby Red: 9C1C20
+  */
+
+#site-header {
+    display: flex;
+    background-color: rgba(156, 28, 32, 1);
+    border-bottom: 1px solid #000000;
+    height: 3.5em;
+    line-height: 3.5em;
+    position: fixed;
+    width: 100%;
+    max-width: 960px;
+    z-index: 10000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+}
+
+#site-header h1 {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 0 1.5em;
+    margin: 0;
+}
+
+#site-header h1 a {
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.15em;
+    padding: 0 5px;
+}
+
+#site-header h1 a:hover {
+    border-bottom: 2px solid #F0F600;
+    padding-bottom: 2px;
+}
+
+
+#site-header .main-nav {
+    flex: 1;
+    border-left: 1px solid #000000;
+    margin-left: 1.5em;
+    overflow: hidden;
+    height: inherit;
+    padding-left: 1.5em;
+}
+
+#site-header .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#site-header .main-nav ul li {
+    display: inline-block;
+    line-height: 1;
+    border-left: 1px solid #000000;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+#site-header .main-nav ul li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#site-header .main-nav ul li a {
+    border-bottom: 0;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#site-header .main-nav ul li a:hover,
+#site-header .main-nav ul li a.active {
+    border-bottom: 2px solid #F0F600;
+    padding-bottom: 2px;
+}
+
+#side-header,
+#content,
+#site-footer {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+#content {
+    flex: auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#content .homepage-content {
+    padding: 20px 20px;
+}
+
+#content .homepage-content h2 {
+    font-size: 2rem;
+}
+
+#content .homepage-content .recent-posts {
+    margin: 20px 0;
+}
+
+#content .homepage-content .recent-posts .words-teasers .words-teaser,
+#content .homepage-content .recent-posts .photo-teasers .photo-teaser {
+    list-style: none;
+    margin: 20px 0;
+}
+
+#content .homepage-content .recent-posts .words-teasers .words-teaser {
+    padding: 20px 20px 20px 0;
+}
+
+#content .homepage-content .recent-posts .words-teasers .words-teaser a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#content .homepage-content .recent-posts .words-teasers .words-teaser a:hover {
+    border-left: 5px solid rgba(156, 28, 32, 1);
+    padding-left: 5px;
+}
+
+#content .homepage-content .recent-posts .words-teasers .words-teaser .words-teaser-content time {
+    display: block;
+    font-size: 0.8rem;
+}
+
+#content .homepage-content .recent-posts .words-teasers .words-teaser .words-teaser-content .words-teaser-content-summary {
+    margin-top: 20px;
+}
+
+#content .homepage-content .recent-posts h3 {
+    font-size: 1.5rem;
+}
+
+#content .homepage-content .recent-posts .recent-posts-view-more a,
+#content .homepage-content .recent-photos .recent-photos-view-more a {
+    display: block;
+    padding: 20px 0;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+#content .homepage-content .recent-posts .recent-posts-view-more a:hover,
+#content .homepage-content .recent-photos .recent-photos-view-more a:hover {
+    border: 1px solid rgba(156, 28, 32, 1);
+    background-color: rgba(156, 28, 32, 1);
+    color: white;
+} 
+
+#site-footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: rgba(156, 28, 32, 0.95);
+}
+
+#site-footer p {
+    margin: 5px 0;
+    color: #ffffff;
+}

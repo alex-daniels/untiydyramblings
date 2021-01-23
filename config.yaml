@@ -9,9 +9,6 @@ menu:
   - name: Words
     url: /words/
     weight: 1
-  - name: Photos
-    url: /photos/
-    weight: 2
   - name: Fun Things
     url: /fun-things/
     weight: 3

@@ -3,4 +3,4 @@ title: photos
 draft: false
 ---
 
-## photos
+## Coming Soon
