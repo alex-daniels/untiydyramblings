@@ -1,16 +1,13 @@
 {{ define "main" }}
     <article class="post-list">
-        {{ .Content }}
-        <ul></ul>
-            {{ range .Pages }}
+        <div class="words-content">{{ .Content }}</div>
+        <ul>
+            {{ $words := where .Site.RegularPages "Type" "in" "words" }}
+            {{ range $words }}
                 <li>
-                    <div class="{{ .Type }}-teaser">
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        <div>
-                            {{ .Summary }}
-                        </div>
-                        <a href="{{ .Permalink }}">More</a>
-                    </div>
+                    <article class="{{ .Type }}-teaser">
+                        <a href="{{ .Permalink }}">{{- partial "wordsTeaser.html" . -}}</a>
+                    </article>
                 </li>
             {{ end }}
         </ul>

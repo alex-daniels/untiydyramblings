@@ -1,6 +1,6 @@
 {{ with .Params.tags }}
-Tagged as:
-<ul id="tags">
+<ul class="tags">
+    Tagged as:
     {{ range . }}
         <li> <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
     {{ end }}

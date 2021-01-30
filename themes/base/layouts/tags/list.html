@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <article class="taxonomy-list">
+        <h2>Tagged as: {{ .Title }}</h2>
+        <ul>
+            {{ range .Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+                    <span> {{ .Date.Format "01/02/2006" }}</span>
+                </li>
+            {{ end }}
+        </ul>
+    </article>
+{{ end }}
