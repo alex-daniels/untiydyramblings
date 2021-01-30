@@ -2,7 +2,6 @@ baseURL: "https://untidyramblings.com"
 languageCode: en-us"
 title: untidyramblings
 theme: 'base'
-enableRobotsTxt: true
 
 menu:
   nav:
@@ -15,3 +14,8 @@ menu:
   - name: About
     url: /about/
     weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

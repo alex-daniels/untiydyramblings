@@ -2,4 +2,4 @@
 draft: false
 ---
 
-Whatever comes to mind.
+My own personal section of the internet.

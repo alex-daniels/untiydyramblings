@@ -10,9 +10,11 @@
                     <li class="words-teaser"><a href="{{ .Permalink }}">{{- partial "wordsTeaser.html" . -}}</a></li>
                 {{ end }}
                 </ul>
-                <div class="recent-posts-view-more">
-                    <a href="/words">View more posts</a>
-                </div>
+                {{ if gt (len $words) 3 }}
+                    <div class="recent-posts-view-more">
+                        <a href="/words">View more posts</a>
+                    </div>
+                {{ end }}
             {{ else }}
                 <h3>No recent posts</h3>
             {{ end }}

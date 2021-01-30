@@ -1,8 +1,7 @@
 {{ define "main" }}
     <article class="post">
-        {{ .Type }}
         <h2><span>{{ .Title }}</span></h2>
-        <article class="content">
+        <article class="{{ .Type }}-page">
             {{ .Content }}
         </article>
     </article>
