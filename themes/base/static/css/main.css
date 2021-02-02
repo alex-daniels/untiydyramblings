@@ -182,6 +182,10 @@ hr {
     padding: 10px 10px;
 }
 
+#site-header .nav-wrapper {
+    padding: 0;
+}
+
 #site-header .main-nav .menu-item {
     padding: 10px 10px;
     text-align: center;
@@ -556,6 +560,10 @@ hr {
 
 .error404 {
     text-align: center;
+}
+
+.error404 img {
+    width: 100%;
 }
 
 .error404 h2 {

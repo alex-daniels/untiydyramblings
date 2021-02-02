@@ -15,6 +15,10 @@ menu:
     url: /about/
     weight: 4
 
+taxonomies:
+  category: categories
+  tag: tags
+
 markup:
   goldmark:
     renderer:
