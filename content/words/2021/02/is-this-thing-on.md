@@ -1,7 +1,7 @@
 ---
 title: "Is This Thing On?"
 date: 2021-02-01T18:11:29-05:00
-draft: true
+draft: fakse
 categories: [nonsense, '2021']
 tags: [it is monday my dudes, is this thing on]
 description: Hi, hello, is this thing on? This is mainly something to get populate the site with more junk.
