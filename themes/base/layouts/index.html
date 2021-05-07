@@ -7,7 +7,7 @@
             {{ if gt (len $words) 0 }}
                 <ul class="words-teasers">
                 {{ range first 3 (.Paginate $words).Pages }}
-                    <li class="words-teaser"><a href="{{ .Permalink }}">{{- partial "wordsTeaser.html" . -}}</a></li>
+                    <li class="words-teaser">{{- partial "wordsTeaser.html" . -}}</li>
                 {{ end }}
                 </ul>
                 {{ if gt (len $words) 3 }}

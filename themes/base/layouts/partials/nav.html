@@ -1,5 +1,8 @@
 <nav class="main-nav">
-    {{ $current := . }}
+  <label for="hammedboiger">menu</label>
+  <input type="checkbox" id="hammedboiger">
+
+  {{ $current := . }}
     <ul class="menu-wrapper">
       {{ range .Site.Menus.nav }}
       <li class="menu-item">

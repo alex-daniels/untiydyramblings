@@ -1,0 +1,16 @@
+{
+  "name": "untidyramblings",
+  "version": "1.0.0",
+  "description": "blog build",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-daniels/untidyramblings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
