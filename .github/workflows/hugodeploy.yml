@@ -27,4 +27,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          script: cd /var/www/untidyramblings.com && hugo
+          script: cd /var/www/untidyramblings.com && /home/alex/bin/hugo
