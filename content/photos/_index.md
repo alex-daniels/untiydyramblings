@@ -1,6 +1,6 @@
 ---
 title: photos
-draft: false
+draft: true
 ---
 
 ## Coming Soon
