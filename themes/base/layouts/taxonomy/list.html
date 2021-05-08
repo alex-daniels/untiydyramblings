@@ -1,7 +1,7 @@
 {{ define "main" }}
     <article class="taxonomy-list">
         <h2>All items under: {{ .Title }}</h2>
-        <ul></ul>
+        <ul>
             {{ range .Pages }}
                 <li>
                     <div class="{{ .Type }}-taxonomy-list">

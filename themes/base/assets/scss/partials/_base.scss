@@ -1,13 +1,14 @@
 html {
     background: $base-grey;
+    height: 100vh;
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
     font-family: $font-name;
 }
 
@@ -20,5 +21,5 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 900px;
     background: #f8f8f8;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
 }

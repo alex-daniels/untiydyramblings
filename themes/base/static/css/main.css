@@ -189,14 +189,15 @@ template {
       border-bottom: 2px solid #9c1c20; }
 
 html {
-  background: #e0e0e0; }
+  background: #e0e0e0;
+  height: 100vh; }
 
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
   font-family: verdana, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -207,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 900px;
   background: #f8f8f8;
   margin: 0 auto;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .post-list {
   padding: 20px 20px; }
@@ -295,6 +296,17 @@ h1, h2, h3, h4, h5, h6 {
 #site-footer p {
   text-align: center; }
 
+.fun-things-page {
+  padding: 20px 20px;
+  display: block; }
+  .fun-things-page .content a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+    line-height: 1.5; }
+    .fun-things-page .content a:hover, .fun-things-page .content a:focus {
+      border-bottom: 2px solid #9c1c20; }
+
 #site-header {
   display: block;
   height: auto;
@@ -314,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: space-between;
         align-items: center;
         max-width: 1000px; } }
-    #site-header .header-wrapper a:hover, #site-header .header-wrapper a:focus {
+    #site-header .header-wrapper a:hover, #site-header .header-wrapper a:focus, #site-header .header-wrapper a.active {
       border-bottom: 2px solid #f0f600; }
     #site-header .header-wrapper h1 {
       text-align: center;
@@ -418,3 +430,16 @@ h1, h2, h3, h4, h5, h6 {
             transition: 0.5s transform ease; }
             .homepage-content .recent-posts .words-teasers .words-teaser .words-teaser-content .read-on:after:hover {
               transform: translateX(10px); }
+
+.taxonomy-list {
+  padding: 20px 20px; }
+  .taxonomy-list ul {
+    margin: 20px 0;
+    list-style-type: square; }
+    .taxonomy-list ul a {
+      color: #000000;
+      text-decoration: none;
+      border-bottom: 2px solid #000000;
+      line-height: 1.5; }
+      .taxonomy-list ul a:hover, .taxonomy-list ul a:focus {
+        border-bottom: 2px solid #9c1c20; }
