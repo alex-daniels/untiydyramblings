@@ -1,7 +1,7 @@
 {{ define "main" }}
     <article class="post-list">
         <div class="words-content">{{ .Content }}</div>
-        <ul>
+        <ul class="words-teasers">
             {{ $words := where .Site.RegularPages "Type" "in" "words" }}
             {{ range $words }}
                 <li>

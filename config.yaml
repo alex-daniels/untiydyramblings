@@ -8,9 +8,6 @@ menu:
   - name: Words
     url: /words/
     weight: 1
-  - name: Fun Things
-    url: /fun-things/
-    weight: 3
   - name: About
     url: /about/
     weight: 4
